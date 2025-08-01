@@ -11,6 +11,7 @@ body {
   align-items: center;
   height: 100vh;
   text-align: center;
+  background-color: #000;
 }
 
 .container {
@@ -67,13 +68,13 @@ body {
 
 .digital-clock {
     font-family: 'Orbitron', sans-serif;
-    margin-top: 50px;
+    margin-top: 100px;
   background: #111;
   color: #f70513;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 20px #f70513;
-  min-width: 350px;
+  min-width: 370px;
   max-width: 400px;
   height: 150px;
 }
@@ -89,5 +90,34 @@ body {
   .clocks {
     flex-direction: column;
     align-items: center;
+    background-color: #000;
   }
+  .heading{
+    margin-top: 550px;
+  }
+  .digital-clock{
+    background-color: #000;
+    margin: 180px;
+  }
+}
+@media (max-width: 448px) {
+  .clocks {
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    overflow: hidden;
+  }
+  .digital-clock{
+    background-color: #000;
+    margin-left: 30%;
+    min-width: 270px;
+    max-width: 400px;
+    max-height: 94px;
+  }
+  .digital-clock .time {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  width: 100%;
+  text-align: center;
+}
 }
